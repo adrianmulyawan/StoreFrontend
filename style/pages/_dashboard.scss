@@ -1,4 +1,5 @@
 .page-dashboard {
+  // Bagian sidebar dan navbar
   #page-content-wrapper {
     background: #f5f5fb;
     min-width: 100vw;
@@ -72,6 +73,37 @@
           margin-left: -15rem;
         }
       }
+    }
+  }
+
+  // Bagian Dashboard Text (Dashboard & Subtilte) serta cards
+  .section-content {
+    margin-top: 100px;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    h5 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #0c0d36;
+    }
+
+    .dashboard-title {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+      color: #0c0d36;
+    }
+
+    .dashboard-subtitle {
+      line-height: 24px;
+      font-weight: 300;
+      font-size: 16px;
+      color: #9191a9;
     }
   }
 }
