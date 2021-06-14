@@ -1,3 +1,4 @@
+// Halaman Dashboard
 .page-dashboard {
   // Bagian sidebar dan navbar
   #page-content-wrapper {
@@ -76,7 +77,7 @@
     }
   }
 
-  // Bagian Dashboard Text (Dashboard & Subtilte) serta cards
+  // Bagian Dashboard Text (Dashboard & Subtilte)
   .section-content {
     margin-top: 100px;
 
@@ -104,6 +105,25 @@
       font-weight: 300;
       font-size: 16px;
       color: #9191a9;
+    }
+
+    // Halaman dashboard-transactions.html
+    .nav-pills {
+      .nav-link {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: #9191a9;
+        border-radius: 0;
+
+        &.active {
+          font-weight: 500;
+          font-size: 18px;
+          color: #0c0d36;
+          border-bottom: 2px solid #0c0d36;
+          background: none;
+        }
+      }
     }
   }
 }

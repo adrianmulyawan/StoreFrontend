@@ -34,7 +34,7 @@
           <div class="list-group list-group-flush">
             <a
               href="dashboard.html"
-              class="list-group-item list-group-item-action active"
+              class="list-group-item list-group-item-action"
             >
               Dashboard
             </a>
@@ -52,7 +52,7 @@
             </a>
             <a
               href="dashboard-settings.html"
-              class="list-group-item list-group-item-action"
+              class="list-group-item list-group-item-action active"
             >
               Store Settings
             </a>
@@ -158,115 +158,97 @@
             <div class="container-fluid">
               <!-- Teks dashboard dan subtitle -->
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Dashboard</h2>
-                <p class="dashboard-subtitle">Look what you have made today!</p>
+                <h2 class="dashboard-title">Store Settings</h2>
+                <p class="dashboard-subtitle">Make store that profitable</p>
               </div>
+              <!-- Store Settings -->
               <div class="dashboard-content">
-                <!-- Card: Customer, Revenue, Transaction -->
                 <div class="row">
-                  <!-- Card Customer -->
-                  <div class="col-md-4">
-                    <div class="card mb-2">
-                      <div class="card-body">
-                        <div class="dashboard-card-title">Customer</div>
-                        <div class="dashboard-card-subtitle">15,209</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Card Revenue -->
-                  <div class="col-md-4">
-                    <div class="card mb-2">
-                      <div class="card-body">
-                        <div class="dashboard-card-title">Revenue</div>
-                        <div class="dashboard-card-subtitle">$931,290</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Card Transaction -->
-                  <div class="col-md-4">
-                    <div class="card mb-2">
-                      <div class="card-body">
-                        <div class="dashboard-card-title">Transaction</div>
-                        <div class="dashboard-card-subtitle">22,409,399</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Recent Transaction -->
-                <div class="row mt-3">
-                  <div class="col-12 mt-2">
-                    <h5 class="mb-3">Recent Transaction</h5>
-
-                    <!-- Recent Transcation Product 1 -->
-                    <a
-                      href="dashboard-transactions-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <img
-                              src="images/recent-transaction/item-1.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-4">Shirup Marzzan</div>
-                          <div class="col-md-3">Adrian Mulyawan</div>
-                          <div class="col-md-3">12 Januari, 2020</div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img src="icon/ic_expand_more.svg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-
-                    <!-- Recent Transaction Product 2 -->
-                    <a
-                      href="dashboard-transactions-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <img
-                              src="images/recent-transaction/item-2.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-4">LeBrone X</div>
-                          <div class="col-md-3">Isser Whitey James</div>
-                          <div class="col-md-3">03 April, 2020</div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img src="icon/ic_expand_more.svg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-
-                    <!-- Recent Transaction Product 3 -->
-                    <a
-                      href="dashboard-transactions-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <img
-                              src="images/recent-transaction/item-3.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-4">Soffa Lembutte X</div>
-                          <div class="col-md-3">Nerita</div>
-                          <div class="col-md-3">05 April, 2020</div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img src="icon/ic_expand_more.svg" alt="" />
+                  <div class="col-12">
+                    <form action="#">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <!-- Store Name -->
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="namaToko">Store Name</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="Toko Buku Gramedia"
+                                />
+                              </div>
+                            </div>
+                            <!-- Store Category -->
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="category">Category</label>
+                                <select id="category" class="form-control">
+                                  <option selected disabled>
+                                    Select Category
+                                  </option>
+                                  <option>Furniture</option>
+                                  <option>Book</option>
+                                  <option>Gadget</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!-- Store Open/Close? -->
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="password">Store Status</label>
+                                <p class="text-muted">
+                                  Apakah saat ini toko Anda buka?
+                                </p>
+                                <div
+                                  class="
+                                    custom-control
+                                    custom-radio
+                                    custom-control-inline
+                                  "
+                                >
+                                  <input
+                                    class="custom-control-input"
+                                    type="radio"
+                                    name="is_store_open"
+                                    id="openStoreTrue"
+                                    value="true"
+                                  />
+                                  <label
+                                    class="custom-control-label"
+                                    for="openStoreTrue"
+                                  >
+                                    Buka
+                                  </label>
+                                </div>
+                                <div
+                                  class="
+                                    custom-control
+                                    custom-radio
+                                    custom-control-inline
+                                  "
+                                >
+                                  <input
+                                    class="custom-control-input"
+                                    type="radio"
+                                    name="is_store_open"
+                                    id="openStoreFalse"
+                                    value="false"
+                                  />
+                                  <label
+                                    class="custom-control-label"
+                                    for="openStoreFalse"
+                                  >
+                                    Sementara Tutup
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </form>
                   </div>
                 </div>
               </div>

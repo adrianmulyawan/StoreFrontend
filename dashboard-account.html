@@ -34,7 +34,7 @@
           <div class="list-group list-group-flush">
             <a
               href="dashboard.html"
-              class="list-group-item list-group-item-action active"
+              class="list-group-item list-group-item-action"
             >
               Dashboard
             </a>
@@ -58,7 +58,7 @@
             </a>
             <a
               href="dashboard-account.html"
-              class="list-group-item list-group-item-action"
+              class="list-group-item list-group-item-action active"
             >
               My Account
             </a>
@@ -156,117 +156,119 @@
             data-aos="fade-up"
           >
             <div class="container-fluid">
-              <!-- Teks dashboard dan subtitle -->
+              <!-- Teks My Account dan subtitle -->
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Dashboard</h2>
-                <p class="dashboard-subtitle">Look what you have made today!</p>
+                <h2 class="dashboard-title">My Account</h2>
+                <p class="dashboard-subtitle">Update your current profile</p>
               </div>
+              <!-- Store My Account Content -->
               <div class="dashboard-content">
-                <!-- Card: Customer, Revenue, Transaction -->
                 <div class="row">
-                  <!-- Card Customer -->
-                  <div class="col-md-4">
-                    <div class="card mb-2">
-                      <div class="card-body">
-                        <div class="dashboard-card-title">Customer</div>
-                        <div class="dashboard-card-subtitle">15,209</div>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="col-12">
+                    <form action="#">
+                      <div class="card">
+                        <!-- Contentn My Account -->
+                        <div class="card-body">
+                          <div class="row mb-2">
+                            <!-- Address -->
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="addressOne">Address 1</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="addressOne"
+                                  name="addressOne"
+                                  value="Setra Duta Cemara"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="addressTwo">Address 2</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="addressTwo"
+                                  name="addressTwo"
+                                  value="Blok B2 No 4"
+                                />
+                              </div>
+                            </div>
 
-                  <!-- Card Revenue -->
-                  <div class="col-md-4">
-                    <div class="card mb-2">
-                      <div class="card-body">
-                        <div class="dashboard-card-title">Revenue</div>
-                        <div class="dashboard-card-subtitle">$931,290</div>
-                      </div>
-                    </div>
-                  </div>
+                            <!-- Province, Cit, Postal Code -->
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label for="province">Province</label>
+                                <select
+                                  name="province"
+                                  id="province"
+                                  class="form-control"
+                                >
+                                  <option value="West Java">West Java</option>
+                                  <option value="Central Java">
+                                    Central Java
+                                  </option>
+                                  <option value="East Java">East Java</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label for="city">City</label>
+                                <select
+                                  name="city"
+                                  id="city"
+                                  class="form-control"
+                                >
+                                  <option value="Bandung">Bandung</option>
+                                  <option value="Semarang">Semarang</option>
+                                  <option value="Surabaya">Surabaya</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label for="postalCode">Postal Code</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="postalCode"
+                                  name="postalCode"
+                                  value="78991"
+                                />
+                              </div>
+                            </div>
 
-                  <!-- Card Transaction -->
-                  <div class="col-md-4">
-                    <div class="card mb-2">
-                      <div class="card-body">
-                        <div class="dashboard-card-title">Transaction</div>
-                        <div class="dashboard-card-subtitle">22,409,399</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Recent Transaction -->
-                <div class="row mt-3">
-                  <div class="col-12 mt-2">
-                    <h5 class="mb-3">Recent Transaction</h5>
-
-                    <!-- Recent Transcation Product 1 -->
-                    <a
-                      href="dashboard-transactions-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <img
-                              src="images/recent-transaction/item-1.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-4">Shirup Marzzan</div>
-                          <div class="col-md-3">Adrian Mulyawan</div>
-                          <div class="col-md-3">12 Januari, 2020</div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img src="icon/ic_expand_more.svg" alt="" />
+                            <!-- Country & Mobile -->
+                            <div class="col md-6">
+                              <div class="form-group">
+                                <label for="country">Country</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="country"
+                                  name="country"
+                                  value="Indonesia"
+                                />
+                              </div>
+                            </div>
+                            <div class="col md-6">
+                              <div class="form-group">
+                                <label for="number">Number</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="number"
+                                  name="number"
+                                  value="+6282154590559"
+                                />
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </a>
-
-                    <!-- Recent Transaction Product 2 -->
-                    <a
-                      href="dashboard-transactions-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <img
-                              src="images/recent-transaction/item-2.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-4">LeBrone X</div>
-                          <div class="col-md-3">Isser Whitey James</div>
-                          <div class="col-md-3">03 April, 2020</div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img src="icon/ic_expand_more.svg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-
-                    <!-- Recent Transaction Product 3 -->
-                    <a
-                      href="dashboard-transactions-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <img
-                              src="images/recent-transaction/item-3.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-4">Soffa Lembutte X</div>
-                          <div class="col-md-3">Nerita</div>
-                          <div class="col-md-3">05 April, 2020</div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img src="icon/ic_expand_more.svg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
+                    </form>
                   </div>
                 </div>
               </div>

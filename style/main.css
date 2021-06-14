@@ -11258,6 +11258,22 @@ footer p {
   color: #9191a9;
 }
 
+.page-dashboard .section-content .nav-pills .nav-link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #9191a9;
+  border-radius: 0;
+}
+
+.page-dashboard .section-content .nav-pills .nav-link.active {
+  font-weight: 500;
+  font-size: 18px;
+  color: #0c0d36;
+  border-bottom: 2px solid #0c0d36;
+  background: none;
+}
+
 .component-categories {
   background: #f4f4f4;
   border-radius: 8px;
@@ -11369,6 +11385,17 @@ footer p {
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
+  color: #0c0d36;
+}
+
+.card-list {
+  margin-bottom: 10px;
+}
+
+.card-list .card-body {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 40px;
   color: #0c0d36;
 }
 
