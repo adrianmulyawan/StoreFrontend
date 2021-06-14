@@ -163,14 +163,41 @@
               </div>
               <!-- Store My Account Content -->
               <div class="dashboard-content">
+                <!-- Form -->
                 <div class="row">
                   <div class="col-12">
                     <form action="#">
                       <div class="card">
-                        <!-- Contentn My Account -->
                         <div class="card-body">
-                          <div class="row mb-2">
-                            <!-- Address -->
+                          <!-- Contentn My Account -->
+                          <div class="row">
+                            <!-- 1. Your Name & Email -->
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="name"
+                                  name="name"
+                                  value="Adrian Mulyawan"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="email"
+                                  name="email"
+                                  value="adrianmulyawan666@gmail.com"
+                                />
+                              </div>
+                            </div>
+
+                            <!-- 2. Address -->
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="addressOne">Address 1</label>
@@ -196,7 +223,7 @@
                               </div>
                             </div>
 
-                            <!-- Province, Cit, Postal Code -->
+                            <!-- 3. Province, City, Postal Code -->
                             <div class="col-md-4">
                               <div class="form-group">
                                 <label for="province">Province</label>
@@ -240,7 +267,7 @@
                               </div>
                             </div>
 
-                            <!-- Country & Mobile -->
+                            <!-- 4. Country & Mobile -->
                             <div class="col md-6">
                               <div class="form-group">
                                 <label for="country">Country</label>
@@ -264,6 +291,18 @@
                                   value="+6282154590559"
                                 />
                               </div>
+                            </div>
+                          </div>
+
+                          <!-- Button Save -->
+                          <div class="row">
+                            <div class="col text-right">
+                              <button
+                                type="submit"
+                                class="btn btn-success px-5"
+                              >
+                                Save Now
+                              </button>
                             </div>
                           </div>
                         </div>
