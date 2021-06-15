@@ -11258,6 +11258,21 @@ footer p {
   color: #9191a9;
 }
 
+.page-dashboard .section-content .product-title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #c5c5c5;
+}
+
+.page-dashboard .section-content .product-subtitle {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0c0d36;
+  margin-bottom: 30px;
+}
+
 .page-dashboard .section-content .nav-pills .nav-link {
   font-weight: normal;
   font-size: 18px;
